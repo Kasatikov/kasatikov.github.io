@@ -1,7 +1,7 @@
 <html>
   <head>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <link rel="stylesheet" href="style.css">
+  <link  href="style.css" rel="stylesheet"></style>
     <title>Test</title>
   </head>
   <body>
@@ -9,14 +9,19 @@
   	<div id="wrapper_main">
   		<div id="problem">
   			<span>
-  			<span id="a_n">3</span> + <span id="b_n">7</span> = <input type="text" id="sum" maxlength="2" value="?">
+  			<span id="a_n"></span> + <span id="b_n"></span> = <input type="text" id="sum" maxlength="2" value="?">
   			</span>
   			</div>
  		<div class="wrapper">			
-    		<div id="stick">
-    			<div style="width: 100%;position:absolute;">
+    		<div id="stick" usemap="#planetmap">
+    			<span class="arrow" id="arro" style="display:none;"></span>
+    			<span class="arrow" id="arro2" style="display:none;"></span>
+    			<div style="width: 100%;position:absolute;height:">
     				<input type="text" class="n_input" id="a" maxlength="1" style="">
-  	<canvas id="canvas" width="400px;" min-width:"" height="150"></canvas>
+  	<canvas id="canvas" width="400px;" min-width:"" height="150" style="
+    z-index: 1000;margin-top: -79px;margin-left:35px;float:left;
+    
+    "></canvas>
     <input type="text" class="n_input" id="b" maxlength="1" style="left:415px;display: none;">
     <div id="cnv2wr"><canvas id="canvas2" width="400px;" min-width:"" height="150" ></canvas></div>
     </div>
@@ -27,7 +32,6 @@
 	</div>
   </body>
 
-
-
-  <script src="script2.js"></script>
+  
+<script src="script.js"></script>
 </html>
