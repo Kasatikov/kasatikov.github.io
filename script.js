@@ -101,18 +101,18 @@ animationCurve(canvas_context, 0, 100, 150, -50, 300, 100, 1300,"arrow",arrow_po
 
 $(document).ready(function(){
 
-  		var a_input = $("#a");
-  		var b_input = $("#b");
-  		var a_n_text = $("#a_n");
-  		var b_n_text = $("#b_n");
-  		var sum_input = $("#sum");      
-  		var distance_a = ((parseInt(numbers[0]) * segment) / 2) + 15; //15 is half of input's width
-  		var distance_b = (((parseInt(numbers[1]) * segment) / 2)) + (parseInt(numbers[0]) * 41);
-  		a_input.css("left", distance_a + "px");
-  		b_input.css("left", distance_b + "px");
-   		a_n_text.html(numbers[0]);
-    	b_n_text.html(numbers[1]);
-      a_input.on("input", function() {
+  var a_input = $("#a");
+  var b_input = $("#b");
+  var a_n_text = $("#a_n");
+  var b_n_text = $("#b_n");
+  var sum_input = $("#sum");      
+  var distance_a = ((parseInt(numbers[0]) * segment) / 2) + 15; //15 is half of input's width
+  var distance_b = (((parseInt(numbers[1]) * segment) / 2)) + (parseInt(numbers[0]) * 41);
+  a_input.css("left", distance_a + "px");
+  b_input.css("left", distance_b + "px");
+  a_n_text.html(numbers[0]);
+  b_n_text.html(numbers[1]);
+  a_input.on("input", function() {
 
        	if(this.value != "" && this.value == a_n_text.text()) {
        		var a_th_num = this.value;
@@ -131,7 +131,7 @@ $(document).ready(function(){
 			    b_input.css("display", "inline");    
         }
         else {
-	      a_input.css("color", "red");
+	     a_input.css("color", "red");
 	     a_n_text.css({'background-color': 'orange', 'border-radius': '8px', 'padding' : '3px'} );
       }
   });
