@@ -28,7 +28,7 @@
   }
   #cnv2wr {
   	display: inline-block;
-  	margin-left: -11px;
+  	margin-left: 0px;
   }
   #sum {
 	width: 60px;height: 60px;color:black;text-align: center;background-color:white;border:none;font-size: 50px;pointer-events:none;
