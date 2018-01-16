@@ -4,64 +4,80 @@
 .arrow {
 	display:none;
 	width: 15px;
-    left: 100px;
-    top: 1px;
-    height: 25px;
-    transform: rotate(50deg);
-    position: absolute;
-    background: url(arrow.png) no-repeat;
-    display: block;
-    background-size: cover;
+  left: 100px;
+  top: 1px;
+  height: 25px;
+  transform: rotate(50deg);
+  position: absolute;
+  background: url(arrow.png) no-repeat;
+  display: block;
+  background-size: cover;
 }
 .n_input {
 	background-color:white;
 	color:black;
-	width:30px;height:40px;font-size:25px;border-radius:5px;box-shadow:none;border:2px solid 	gray;text-align:center;    position: absolute;
-    z-index: 999999;
-    left: 31px;
-    bottom: 150px;
+	width:30px;
+  height:40px;
+  font-size:25px;
+  border-radius:5px;
+  box-shadow:none;
+  border:2px solid 	gray;
+  text-align:center;
+  position: absolute;
+  z-index: 999999;
+  left: 31px;
+  bottom: 150px;
 
 }
-  body {
-  	min-width: 890px;
-  	margin: 0 auto;
-  }
-  #cnv2wr {
-  	display: inline-block;
-  	margin-left: 0px;
-  }
-  #sum {
-	width: 60px;height: 60px;color:black;text-align: center;background-color:white;border:none;font-size: 50px;pointer-events:none;
-  }
-  #canvas2 {
-  	 z-index: 1000;
-  	 margin-top: -79px;
-  	 float:right;
-  }
-  #wrapper_main {
-  	height: 100%;
-  	width: 100%;
-  }
-  .wrapper {
-  	
-  	width:875px;
-  	height: 84px;
-  	 position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    margin: auto;
-  }
-  #problem {
-  	text-align:center;
-  	margin-top: 50px;
-  }
-  #problem span {
-  	font-size: 55px;
-  }
-  	#stick {
-  		background-image: url(sprite.png);
-  		width: 100%;
-  		height: 100%;
-  	}
+body {
+  min-width: 890px;
+  margin: 0 auto;
+}
+#cnv2wr {
+  display: inline-block;
+  margin-left: 0px;
+}
+
+#sum {
+  width: 60px;
+  height: 60px;
+  color:black;
+  text-align: center;
+  background-color:white;
+  border:none;
+  font-size: 50px;
+  pointer-events:none;
+}
+
+#canvas2 {
+  z-index: 1000;
+  margin-top: -79px;
+  float:right;
+}
+
+#wrapper_main {
+  height: 100%;
+  width: 100%;
+}
+.wrapper {	
+  width:875px;
+  height: 84px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+#problem {
+  text-align:center;
+  margin-top: 50px;
+}
+#problem span {
+  font-size: 55px;
+}
+#stick {
+  background-image: url(sprite.png);
+  width: 100%;
+  height: 100%;
+}
