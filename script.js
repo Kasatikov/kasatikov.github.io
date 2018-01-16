@@ -1,3 +1,4 @@
+//all comments in English :))
 function getNumbers(min_lim_a, max_lim_a, min_lim_ab, max_lim_ab) {
     var gen_segment_b, result;
     gen_segment_b = [];
@@ -8,7 +9,7 @@ function getNumbers(min_lim_a, max_lim_a, min_lim_ab, max_lim_ab) {
     result.push(gen_a,gen_b,gen_a + gen_b);
     return result;
   } 
-  // getNumbers constructs random a,b numbers with some restrictions that were specified in the task and returns an array of [a,b,a + b] 
+  // getNumbers constructs random a,b numbers with some restrictions that were specified in the task and returns an array [a, b, a + b] 
   
 
  function animationCurve(canvas_context, x0, y0, x1, y1, x2, y2, duration, id, arrow_position) {
@@ -54,8 +55,6 @@ function splitCurve(canvas_context, x0, y0, x1, y1, x2, y2, t0, t1, id, arrow_po
 
   } else if( t0 != t1 ) {
 
-
-
         var t00 = t0 * t0,
             t01 = 1.0 - t0,
             t02 = t01 * t01,
@@ -74,22 +73,16 @@ function splitCurve(canvas_context, x0, y0, x1, y1, x2, y2, t0, t1, id, arrow_po
         
         var nx1 = lerp ( lerp ( x0 , x1 , t0 ) , lerp ( x1 , x2 , t0 ) , t1 ),
             ny1 = lerp ( lerp ( y0 , y1 , t0 ) , lerp ( y1 , y2 , t0 ) , t1 );
-        
-           
-
-
+                 
         canvas_context.moveTo( nx0, ny0 );
         canvas_context.quadraticCurveTo( nx1, ny1, nx2, ny2 );
-
-
-
   }
     
     canvas_context.stroke();
     canvas_context.closePath();
 }
 
-function lerp(v0, v1, t) {
+function lerp(v0, v1, t) { // lin. interpolation
     return ( 1.0 - t ) * v0 + t * v1;
 }
  
@@ -107,6 +100,7 @@ canvas_context2.scale(numbers[1] * 0.13, 1);
 animationCurve(canvas_context, 0, 100, 150, -50, 300, 100, 1300,"arrow",arrow_position);
 
 $(document).ready(function(){
+
   		var a_input = $("#a");
   		var b_input = $("#b");
   		var a_n_text = $("#a_n");
@@ -118,9 +112,6 @@ $(document).ready(function(){
   		b_input.css("left", distance_b + "px");
    		a_n_text.html(numbers[0]);
     	b_n_text.html(numbers[1]);
-
-
-
       a_input.on("input", function() {
 
        	if(this.value != "" && this.value == a_n_text.text()) {
@@ -193,27 +184,9 @@ $(document).ready(function(){
 
      	});  
 
-      
-
-
-
 });
   	
   	
-  	
-	
-
-
-
-
-
-
-
-
-
-
-
-//polyfills
 (function() {
     var lastTime = 0;
     var vendors = ['ms', 'moz', 'webkit', 'o'];
